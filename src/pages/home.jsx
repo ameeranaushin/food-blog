@@ -9,25 +9,49 @@ const Home = () => {
   return (
     <div className="bg-cream min-h-screen font-sans overflow-x-hidden">
       {/* 🌟 Hero Section */}
-      <section className="relative bg-cream flex flex-col items-center justify-center text-center py-16 sm:py-20 md:py-28 overflow-hidden px-4">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif text-maroon mb-4 animate-pulse leading-snug">
-          Welcome to Food Blog 🍗🥗🍕
-        </h1>
-        <p className="text-darkText text-base sm:text-lg md:text-xl mb-8 max-w-2xl">
-          Discover delicious recipes and culinary delights that bring joy to every bite 🍴
-        </p>
+{/* 🌟 Hero Section */}
+<section
+  className="relative flex flex-col items-center justify-center text-center py-20 sm:py-28 px-4 overflow-hidden"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1605327047708-e534b2257359?auto=format&fit=crop&w=1920&q=80')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
-        {/* 🍔 Floating Emojis */}
-        <span className="absolute top-8 left-4 sm:left-10 text-3xl sm:text-4xl md:text-5xl animate-bounce">
-          🍔
-        </span>
-        <span className="absolute top-1/3 right-8 sm:right-20 text-4xl sm:text-5xl md:text-6xl animate-pulse">
-          🥗
-        </span>
-        <span className="absolute bottom-12 left-1/4 text-3xl sm:text-4xl md:text-5xl animate-spin">
-          🍩
-        </span>
-      </section>
+  {/* 🍔 Floating Emojis */}
+  <span className="absolute top-12 left-[10%] text-4xl sm:text-5xl md:text-6xl animate-bounce select-none">
+    🍔
+  </span>
+  <span className="absolute top-20 right-[10%] text-4xl sm:text-5xl md:text-6xl animate-pulse select-none">
+    🥗
+  </span>
+  <span className="absolute bottom-12 left-[45%] text-4xl sm:text-5xl md:text-6xl animate-spin select-none">
+    🍩
+  </span>
+
+  {/* Content */}
+  <div className="relative z-10">
+    <h1
+      className="text-4xl sm:text-6xl md:text-7xl text-maroon mb-4 leading-snug"
+      style={{
+        fontFamily: "'Pinyon Script', cursive",
+        textShadow: "1px 1px 3px rgba(0,0,0,0.3)",
+      }}
+    >
+      Everyday Eats
+    </h1>
+
+    <p className="text-cream text-base sm:text-lg md:text-xl mb-8 max-w-2xl italic mx-auto">
+      From smoky tandoors to saffron rice — where every recipe tells a story of comfort and craving.
+    </p>
+  </div>
+</section>
+
+     
 
       {/* 🔍 Search Bar */}
       <div className="flex justify-center my-8 sm:my-12 px-4">

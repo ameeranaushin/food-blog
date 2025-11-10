@@ -3,4 +3,8 @@
 @tailwind utilities;
 
 
+.font-cursive {
+  font-family: "Dancing Script", cursive;
+  letter-spacing: 1px;
+}
 

@@ -32,16 +32,16 @@ const Header = () => {
       </ul>
 
       {/* Right Icons */}
-      <div className="hidden md:flex items-center space-x-4">
-        <Search className="cursor-pointer hover:text-accent transition-colors" />
-        <a
-          href="https://www.instagram.com/ev3rydayy_cravingzz?igsh=MXZnNDducWJjMDRldQ=="
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Instagram className="cursor-pointer hover:text-accent transition-colors" />
-        </a>
-      </div>
+<div className="hidden md:flex items-center space-x-4">
+  <a
+    href="https://www.instagram.com/ev3rydayy_cravingzz?igsh=MXZnNDducWJjMDRldQ=="
+    target="_blank"
+    rel="noreferrer"
+  >
+    <Instagram className="cursor-pointer hover:text-accent transition-colors" />
+  </a>
+</div>
+
 
       {/* Mobile Menu Button */}
       <button
